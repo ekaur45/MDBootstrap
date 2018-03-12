@@ -1,0 +1,66 @@
+/* Your custom styles */
+.blue-back {
+    background-color: lightblue;
+}
+
+.orange-back {
+    background-color: orange;
+}
+
+.green-back {
+    background-color: greenyellow;
+}
+
+@media (min-width: 768px) {
+    .media .avatar-2 {
+        width: 130px;
+    }
+}
+
+@media (max-width: 767px) {
+    .media .avatar-2 {
+        width: 160px;
+    }
+}
+
+.card img.rounded-circle {
+    border-radius: 50%;
+}
+
+.group-control {
+    background-color: #17a2b8;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.table-wrapper {
+    display: block;
+    max-height: 300px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+.chip.chip-md {
+	height: 42px;
+	line-height: 42px;
+	border-radius: 21px;
+}
+
+	.chip.chip-md img {
+		height: 42px;
+		width: 42px;
+	}
+
+.chip.chip-lg {
+	height: 52px;
+	line-height: 52px;
+	border-radius: 26px;
+}
+
+	.chip.chip-lg img {
+		height: 52px;
+		width: 52px;
+	}
+                
