@@ -6,22 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Material Design Bootstrap</title>
-
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <script src="js/site.js"></script>
     <link href="css/compiled.css" rel="stylesheet" />
     <script src="js/toastr.js"></script>
 	<style>
+        #accordionEx{
+            width: 300px;position: fixed;z-index: 9999;height: 100%;
+        }
 		#mySidenav a {
-			position: absolute;
+			/* position: absolute; */
 			left: -80px;
 			transition: 0.3s;
 			padding: 15px;
@@ -59,90 +57,112 @@
 </head>
 
 <body class="pink-skin">
-
-	<div id="mySidenav" class="sidenav">
-		<a href="#" id="about">About</a>
-		<a href="#" id="blog">Blog</a>
-		<a href="#" id="projects">Projects</a>
-		<a href="#" id="contact">Contact</a>
-	</div>
-
-    <!--<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
-
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark purple" style="position: fixed;width: 100%;z-index: 9999999999;">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link waves-effect waves-light" href="#">
-                            Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-3">
-                            <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto nav-flex-icons">
-                    <li>
-                        <form class="form-inline">
-                            <div class="md-form mt-0">
-                                <div class="waves-input-wrapper waves-effect waves-light"><input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"></div>
+                <a class="navbar-brand" href="javascript:;;">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link waves-effect waves-light" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./gallery.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="javascript:;;">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink-3">
+                                <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Action</a>
+                                <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Another action</a>
+                                <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Something else here</a>
                             </div>
-                        </form>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light">
-                            <i class="fa fa-google-plus"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            <i class="fa fa-user"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item waves-effect waves-light" href="#">Action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="#">Another action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="#">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i> 
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Action</a>
+                                <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Another action</a>
+                                <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>-->
-
-    <div class="container">
-        <!--Carousel Wrapper-->
-        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-            <!--Indicators-->
+            </nav>
+          
+            
+        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <!--Modal: Contact form-->
+                <div class="modal-dialog cascading-modal" role="document">
+    
+                    <!--Content-->
+                    <div class="modal-content">
+    
+                        <!--Header-->
+                        <div class="modal-header primary-color white-text">
+                            <h4 class="title">
+                                <i class="fa fa-pencil"></i> Contact form
+                            </h4>
+                            <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <!--Body-->
+                        <div class="modal-body">
+                            <div class="md-form form-sm">
+                                <i class="fa fa-envelope prefix"></i>
+                                <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
+                                <label for="materialFormNameModalEx1">Your name</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-lock prefix"></i>
+                                <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
+                                <label for="materialFormEmailModalEx1">Your email</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-tag prefix"></i>
+                                <input type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm">
+                                <label for="materialFormSubjectModalEx1">Subject</label>
+                            </div>
+                            <div class="md-form form-sm">
+                                <i class="fa fa-pencil prefix"></i>
+                                <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control"></textarea>
+                                <label for="materialFormMessageModalEx1">Your message</label>
+                            </div>
+    
+                            <div class="text-center mt-4 mb-2">
+                                <button class="btn btn-primary">
+                                    Send
+                                    <i class="fa fa-send ml-2"></i>
+                                </button>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <div class="jumbotron container" style="padding-top: 85px;">
+        <div id="carousel-example-2" class="carousel slide carousel-fade form-group" data-ride="carousel" style="margin-bottom: 50px">
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-2" data-slide-to="1"></li>
                 <li data-target="#carousel-example-2" data-slide-to="2"></li>
             </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
                     <div class="view">
@@ -155,7 +175,6 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!--Mask color-->
                     <div class="view">
                         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
                         <div class="mask rgba-black-strong"></div>
@@ -166,7 +185,6 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!--Mask color-->
                     <div class="view">
                         <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
                         <div class="mask rgba-black-slight"></div>
@@ -177,8 +195,6 @@
                     </div>
                 </div>
             </div>
-            <!--/.Slides-->
-            <!--Controls-->
             <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
@@ -187,124 +203,15 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-            <!--/.Controls-->
         </div>
-        <!--/.Carousel Wrapper-->
-        <div class="row">
-            <div class="col-sm-4">
-                <canvas id="polarChart"></canvas>
-            </div>
-            <div class="col-sm-4">
-                <canvas id="pieChart"></canvas>
-            </div>
-            <div class="col-sm-4">
-                <canvas id="barChart"></canvas>
-            </div>
-        </div>
-
-
-
-        <!--Accordion wrapper-->
-        <div class="accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-
-            <!-- Accordion card -->
-            <div class="card">
-
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingOne">
-                    <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h5 class="mb-0">
-                            Collapsible Group Item #1 <i class="fa fa-angle-down rotate-icon"></i>
-                        </h5>
-                    </a>
-                </div>
-
-                <!-- Card body -->
-                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordionEx">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <!-- Accordion card -->
-            <!-- Accordion card -->
-            <div class="card">
-
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingTwo">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h5 class="mb-0">
-                            Collapsible Group Item #2 <i class="fa fa-angle-down rotate-icon"></i>
-                        </h5>
-                    </a>
-                </div>
-
-                <!-- Card body -->
-                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordionEx">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <!-- Accordion card -->
-            <!-- Accordion card -->
-            <div class="card">
-
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingThree">
-                    <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h5 class="mb-0">
-                            Collapsible Group Item #3 <i class="fa fa-angle-down rotate-icon"></i>
-                        </h5>
-                    </a>
-                </div>
-
-                <!-- Card body -->
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordionEx">
-                    <div class="card-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                        moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                        et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                        synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    </div>
-                </div>
-            </div>
-            <!-- Accordion card -->
-        </div>
-        <!--/.Accordion wrapper-->
-        <!--Carousel Wrapper-->
-        <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-            <!--Controls-->
-            <div class="controls-top">
-                <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
-            </div>
-            <!--/.Controls-->
-            <!--Indicators-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item row" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                <li data-target="#multi-item-example" data-slide-to="1"></li>
+                <li data-target="#multi-item-example" data-slide-to="0" class=""></li>
+                <li data-target="#multi-item-example" data-slide-to="1" class="active"></li>
                 <li data-target="#multi-item-example" data-slide-to="2"></li>
             </ol>
-            <!--/.Indicators-->
-            <!--Slides-->
             <div class="carousel-inner" role="listbox">
-
-                <!--First slide-->
-                <div class="carousel-item active">
+                <div class="carousel-item">
 
                     <div class="col-md-4">
                         <div class="card mb-2">
@@ -312,7 +219,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
@@ -323,7 +230,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
@@ -334,15 +241,13 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <!--/.First slide-->
-                <!--Second slide-->
-                <div class="carousel-item">
+                <div class="carousel-item active">
 
                     <div class="col-md-4">
                         <div class="card mb-2">
@@ -350,7 +255,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
@@ -361,7 +266,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
@@ -372,14 +277,12 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <!--/.Second slide-->
-                <!--Third slide-->
                 <div class="carousel-item">
 
                     <div class="col-md-4">
@@ -388,7 +291,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
@@ -399,7 +302,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
@@ -410,42 +313,400 @@
                             <div class="card-body">
                                 <h4 class="card-title">Card title</h4>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a class="btn btn-primary">Button</a>
+                                <a class="btn btn-primary waves-effect waves-light">Button</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <!--/.Third slide-->
+            </div>
+        </div>
+        <section>
+            <h1 class="py-5 font-weight-bold text-center">Why is it so great?</h1>
+            <p class="px-5 mb-5 pb-3 lead grey-text text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <i class="fa fa-2x fa-flag-checkered deep-purple-text"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <h5 class="font-weight-bold">International</h5>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                deleniti hic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <i class="fa fa-2x fa-flask deep-purple-text"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <h5 class="font-weight-bold">Experimental</h5>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                deleniti hic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <i class="fa fa-2x fa-glass deep-purple-text"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <h5 class="font-weight-bold">Relaxing</h5>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                deleniti hic.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2 center-on-small-only flex-center">
+                    <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png" alt="" class="z-depth-0">
+                </div>
+                <div class="col-md-4">
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <i class="fa fa-2x fa-heart deep-purple-text"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <h5 class="font-weight-bold">Beloved</h5>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                deleniti hic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <i class="fa fa-2x fa-flash deep-purple-text"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <h5 class="font-weight-bold">Rapid</h5>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                deleniti hic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-2">
+                            <i class="fa fa-2x fa-magic deep-purple-text"></i>
+                        </div>
+                        <div class="col-10 text-left">
+                            <h5 class="font-weight-bold">Magical</h5>
+                            <p class="grey-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
+                                deleniti hic.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		
+<!--Section: Social newsfeed v.2-->
+<section class="pt-5 pb-3">
+
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-6">
+
+            <!--Newsfeed-->
+            <div class="mdb-feed">
+
+                <!--First news-->
+                <div class="news">
+
+                    <!--Label-->
+                    <div class="label">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-1-mini.jpg" class="rounded-circle z-depth-1-half">
+                    </div>
+
+                    <!--Excert-->
+                    <div class="excerpt">
+
+                        <!--Brief-->
+                        <div class="brief">
+                            <a class="name">John Doe</a> added you as a friend
+                            <div class="date">1 hour ago</div>
+                        </div>
+
+                        <!--Feed footer-->
+                        <div class="feed-footer">
+                            <a class="comment" data-toggle="collapse" href="#collapseExample-1" aria-expanded="false" aria-controls="collapseExample-1">Comment</a> &middot;
+                            <span>
+                                <a>7</a>
+                            </span>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I like it">
+                                <i class="fa fa-thumbs-up"></i>
+                            </a>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I don't like it">
+                                <i class="fa fa-thumbs-down"></i>
+                            </a>
+                            <div class="collapse" id="collapseExample-1">
+                                <div class="card card-body mt-1">
+                                    <!--Add comment-->
+                                    <div class="md-form mt-1 mb-1">
+                                        <textarea type="text" id="form7" class="md-textarea"></textarea>
+                                        <label for="form7">Add comment</label>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="btn-flat waves-effect" data-toggle="collapse" data-target="#collapseExample-1" aria-expanded="false"
+                                            aria-controls="collapseExample-1">Cancel</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample-1" aria-expanded="false"
+                                            aria-controls="collapseExample-1">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--First news-->
+
+                <!--Second news-->
+                <div class="news">
+
+                    <!--Label-->
+                    <div class="label">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(17)-mini.jpg" class="rounded-circle z-depth-1-half">
+                    </div>
+
+                    <!--Excert-->
+                    <div class="excerpt">
+
+                        <!--Brief-->
+                        <div class="brief">
+                            <a class="name">Anna Smith</a> added
+                            <a> 2 new illustrations</a>
+                            <div class="date">4 hours ago</div>
+                        </div>
+
+                        <!--Added images-->
+                        <div class="added-images">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/50.jpg" class="z-depth-1 rounded">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg" class="z-depth-1 rounded">
+                        </div>
+
+                        <!--Feed footer-->
+                        <div class="feed-footer">
+                            <a class="comment" data-toggle="collapse" href="#collapseExample-2" aria-expanded="false" aria-controls="collapseExample-2">Comment</a> &middot;
+                            <span>
+                                <a>31</a>
+                            </span>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I like it">
+                                <i class="fa fa-thumbs-up"></i>
+                            </a>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I don't like it">
+                                <i class="fa fa-thumbs-down"></i>
+                            </a>
+                            <div class="collapse" id="collapseExample-2">
+                                <div class="card card-body mt-1">
+                                    <!--Add comment-->
+                                    <div class="md-form mt-1 mb-1">
+                                        <textarea type="text" id="form7" class="md-textarea"></textarea>
+                                        <label for="form7">Add comment</label>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="btn-flat waves-effect" data-toggle="collapse" data-target="#collapseExample-2" aria-expanded="false"
+                                            aria-controls="collapseExample-2">Cancel</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample-2" aria-expanded="false"
+                                            aria-controls="collapseExample-2">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Second news-->
+
+                <!--Third news-->
+                <div class="news">
+
+                    <!--Label-->
+                    <div class="label">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9)-mini.jpg" class="rounded-circle z-depth-1-half">
+                    </div>
+
+                    <!--Excert-->
+                    <div class="excerpt">
+
+                        <!--Brief-->
+                        <div class="brief">
+                            <a class="name">Danny Moore</a> added you as a friend
+                            <div class="date">7 hours ago</div>
+                        </div>
+
+                        <!--Feed footer-->
+                        <div class="feed-footer">
+                            <a class="comment" data-toggle="collapse" href="#collapseExample-3" aria-expanded="false" aria-controls="collapseExample-3">Comment</a> &middot;
+                            <span>
+                                <a>12</a>
+                            </span>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I like it">
+                                <i class="fa fa-thumbs-up"></i>
+                            </a>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I don't like it">
+                                <i class="fa fa-thumbs-down"></i>
+                            </a>
+                            <div class="collapse" id="collapseExample-3">
+                                <div class="card card-body mt-1">
+                                    <!--Add comment-->
+                                    <div class="md-form mt-1 mb-1">
+                                        <textarea type="text" id="form7" class="md-textarea"></textarea>
+                                        <label for="form7">Add comment</label>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="btn-flat waves-effect" data-toggle="collapse" data-target="#collapseExample-3" aria-expanded="false"
+                                            aria-controls="collapseExample-3">Cancel</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample-3" aria-expanded="false"
+                                            aria-controls="collapseExample-3">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Third news-->
+
+                <!--Fourth news-->
+                <div class="news">
+
+                    <!--Label-->
+                    <div class="label">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(18)-mini.jpg" class="rounded-circle z-depth-1-half">
+                    </div>
+
+                    <!--Excert-->
+                    <div class="excerpt">
+
+                        <!--Brief-->
+                        <div class="brief">
+                            <a class="name">Lili Rose</a> posted on his page
+                            <div class="date">2 days ago</div>
+                        </div>
+
+                        <!--Added text-->
+                        <div class="added-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero inventore, iste quas libero eius?
+                            Vitae sint neque animi alias sunt dolor, accusantium ducimus, non placeat voluptate.</div>
+
+                        <!--Feed footer-->
+                        <div class="feed-footer">
+                            <a class="comment" data-toggle="collapse" href="#collapseExample-4" aria-expanded="false" aria-controls="collapseExample-4">Comment</a> &middot;
+                            <span>
+                                <a>25</a>
+                            </span>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I like it">
+                                <i class="fa fa-thumbs-up"></i>
+                            </a>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I don't like it">
+                                <i class="fa fa-thumbs-down"></i>
+                            </a>
+                            <div class="collapse" id="collapseExample-4">
+                                <div class="card card-body mt-1">
+                                    <!--Add comment-->
+                                    <div class="md-form mt-1 mb-1">
+                                        <textarea type="text" id="form7" class="md-textarea"></textarea>
+                                        <label for="form7">Add comment</label>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="btn-flat waves-effect" data-toggle="collapse" data-target="#collapseExample-4" aria-expanded="false"
+                                            aria-controls="collapseExample-4">Cancel</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample-4" aria-expanded="false"
+                                            aria-controls="collapseExample-4">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Fourth news-->
+
+                <!--Fifth news-->
+                <div class="news">
+
+                    <!--Label-->
+                    <div class="label">
+                        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20)-mini.jpg" class="rounded-circle z-depth-1-half">
+                    </div>
+
+                    <!--Excert-->
+                    <div class="excerpt">
+
+                        <!--Brief-->
+                        <div class="brief">
+                            <a class="name">Kate Harrison</a> added
+                            <a> 2 new photos</a> of you
+                            <div class="date">3 days ago</div>
+                        </div>
+
+                        <!--Added images-->
+                        <div class="added-images">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/81.jpg" class="z-depth-1 rounded">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg" class="z-depth-1 rounded">
+                        </div>
+
+                        <!--Feed footer-->
+                        <div class="feed-footer">
+                            <a class="comment" data-toggle="collapse" href="#collapseExample-5" aria-expanded="false" aria-controls="collapseExample-5">Comment</a> &middot;
+                            <span>
+                                <a>47</a>
+                            </span>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I like it">
+                                <i class="fa fa-thumbs-up"></i>
+                            </a>
+                            <a class="thumbs" data-toggle="tooltip" data-placement="top" title="I don't like it">
+                                <i class="fa fa-thumbs-down"></i>
+                            </a>
+                            <div class="collapse" id="collapseExample-5">
+                                <div class="card card-body mt-1">
+                                    <!--Add comment-->
+                                    <div class="md-form mt-1 mb-1">
+                                        <textarea type="text" id="form7" class="md-textarea"></textarea>
+                                        <label for="form7">Add comment</label>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button type="button" class="btn-flat waves-effect" data-toggle="collapse" data-target="#collapseExample-5" aria-expanded="false"
+                                            aria-controls="collapseExample-5">Cancel</button>
+                                        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample-5" aria-expanded="false"
+                                            aria-controls="collapseExample-5">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Fifth news-->
 
             </div>
-            <!--/.Slides-->
+            <!--Newsfeed-->
 
         </div>
-        <!--/.Carousel Wrapper-->
-        <!--Info message-->
-        <a class="btn btn-info" onclick="toastr.info('Hi! I am info message.');">Info message</a>
-        <!--Warning message-->
-        <a class="btn btn-warning" onclick="toastr.warning('Hi! I am warning message.');">Warning message</a>
-        <!--Success message-->
-        <a class="btn btn-success" onclick="toastr.success('Hi! I am success message.');">Success message</a>
-        <!--Error message-->
-        <a class="btn btn-danger" onclick="toastr.error('Hi! I am error message.');">Error message</a>
-        <div class="chip">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-6.jpg" alt="Contact Person"> John Doe
-        </div>
+        <!--Grid column-->
 
-        <div class="chip chip-md">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-10.jpg" alt="Contact Person"> Anna Smith
-        </div>
+    </div>
+    <!--Grid row-->
 
-        <div class="chip chip-lg">
-            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Contact Person"> Lara Lim
-        </div>
-
-
-
-        <!-- Nav tabs -->
+</section>
+<!--Section: Social newsfeed v.2-->
+            
         <div class="tabs-wrapper">
             <ul class="nav classic-tabs tabs-cyan" role="tablist">
                 <li class="nav-item">
@@ -462,188 +723,25 @@
                 </li>
             </ul>
         </div>
-
-        <!-- Tab panels -->
         <div class="tab-content card">
-
-            <!--Panel 1-->
             <div class="tab-pane fade in show active" id="panel51" role="tabpanel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
 
             </div>
-            <!--/.Panel 1-->
-            <!--Panel 2-->
             <div class="tab-pane fade" id="panel52" role="tabpanel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
 
             </div>
-            <!--/.Panel 2-->
-            <!--Panel 3-->
             <div class="tab-pane fade" id="panel53" role="tabpanel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
 
             </div>
-            <!--/.Panel 3-->
-            <!--Panel 4-->
             <div class="tab-pane fade" id="panel54" role="tabpanel">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione porro voluptate odit minima.</p>
 
             </div>
-            <!--/.Panel 4-->
-
         </div>
-
-        <ul class="nav md-pills nav-justified pills-secondary">
-            <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#panel4" role="tab">Active</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#panel11" role="tab">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#panel12" role="tab">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#panel13" role="tab">Help</a>
-            </li>
-        </ul>
-
-        <!-- Tab panels -->
-        <div class="tab-content">
-
-            <!--Panel 1-->
-            <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
-                <br>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                    porro voluptate odit minima.
-                </p>
-
-            </div>
-            <!--/.Panel 1-->
-            <!--Panel 2-->
-            <div class="tab-pane fade" id="panel12" role="tabpanel">
-                <br>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                    porro voluptate odit minima.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                    porro voluptate odit minima.
-                </p>
-
-            </div>
-            <!--/.Panel 2-->
-            <!--Panel 3-->
-            <div class="tab-pane fade" id="panel13" role="tabpanel">
-                <br>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                    porro voluptate odit minima.
-                </p>
-
-            </div>
-            <!--/.Panel 3-->
-            <!--Panel 4-->
-            <div class="tab-pane fade" id="panel14" role="tabpanel">
-                <br>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                    porro voluptate odit minima.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta doloribus
-                    reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur. Tempora, placeat ratione
-                    porro voluptate odit minima.
-                </p>
-
-            </div>
-            <!--/.Panel 4-->
-
-        </div>
-
-        <div class="card border-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">Header</div>
-            <div class="card-body text-secondary">
-                <h5 class="card-title">Secondary card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-        <a href="" class="btn btn-default btn-rounded mb-4 waves-effect waves-light" data-toggle="modal" data-target="#modalContactForm">Launch Modal Contact Form</a>
-        <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <!--Modal: Contact form-->
-            <div class="modal-dialog cascading-modal" role="document">
-
-                <!--Content-->
-                <div class="modal-content">
-
-                    <!--Header-->
-                    <div class="modal-header primary-color white-text">
-                        <h4 class="title">
-                            <i class="fa fa-pencil"></i> Contact form
-                        </h4>
-                        <button type="button" class="close waves-effect waves-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <!--Body-->
-                    <div class="modal-body">
-
-                        <!-- Material input name -->
-                        <div class="md-form form-sm">
-                            <i class="fa fa-envelope prefix"></i>
-                            <input type="text" id="materialFormNameModalEx1" class="form-control form-control-sm">
-                            <label for="materialFormNameModalEx1">Your name</label>
-                        </div>
-
-                        <!-- Material input email -->
-                        <div class="md-form form-sm">
-                            <i class="fa fa-lock prefix"></i>
-                            <input type="password" id="materialFormEmailModalEx1" class="form-control form-control-sm">
-                            <label for="materialFormEmailModalEx1">Your email</label>
-                        </div>
-
-                        <!-- Material input subject -->
-                        <div class="md-form form-sm">
-                            <i class="fa fa-tag prefix"></i>
-                            <input type="text" id="materialFormSubjectModalEx1" class="form-control form-control-sm">
-                            <label for="materialFormSubjectModalEx1">Subject</label>
-                        </div>
-
-                        <!-- Material textarea message -->
-                        <div class="md-form form-sm">
-                            <i class="fa fa-pencil prefix"></i>
-                            <textarea type="text" id="materialFormMessageModalEx1" class="md-textarea form-control"></textarea>
-                            <label for="materialFormMessageModalEx1">Your message</label>
-                        </div>
-
-                        <div class="text-center mt-4 mb-2">
-                            <button class="btn btn-primary">
-                                Send
-                                <i class="fa fa-send ml-2"></i>
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-                <!--/.Content-->
-            </div>
-            <!--/Modal: Contact form-->
-        </div>
-
-
-
 
 
         <section class="form-dark">
@@ -719,109 +817,14 @@
                 <label for="form1">Enter text..</label>
             </div>
         </div>
-        <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-            </a>
-
-            <div class="dropdown-menu">
-                <form class="px-4 py-3">
-                    <div class="form-group">
-                        <label for="exampleDropdownFormEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleDropdownFormPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                        <label class="form-check-label" for="dropdownCheck">
-                            Remember me
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Sign in</button>
-                </form>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">New around here? Sign up</a>
-                <a class="dropdown-item" href="#">Forgot password?</a>
-            </div>
-        </div>
-
+        
     </div>
 
-
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
 
-            <div id="mdb-lightbox-ui">
-                <!-- Root element of PhotoSwipe. Must have class pswp. -->
-                <div class="pswp pswp--supports-fs pswp--open pswp--notouch pswp--css_animation pswp--svg pswp--zoom-allowed pswp--visible pswp--animated-in pswp--has_mouse" tabindex="-1" role="dialog" aria-hidden="false" style="position: fixed;">
-
-                    <!-- Background of PhotoSwipe.
-                         It's a separate element, as animating opacity is faster than rgba(). -->
-                    <div class="pswp__bg" style="opacity: 1;"></div>
-
-                    <!-- Slides wrapper with overflow:hidden. -->
-                    <div class="pswp__scroll-wrap">
-
-                        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-                        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-                        <div class="pswp__container" style="transform: translate3d(0px, 0px, 0px);">
-                            <div class="pswp__item" style="display: block; transform: translate3d(-1773px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(487px, 44px, 0px) scale(1);"><img class="pswp__img" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(133).jpg" style="opacity: 1; width: 609px; height: 406px;"></div></div>
-                            <div class="pswp__item" style="transform: translate3d(0px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(487px, 44px, 0px) scale(1);"><img class="pswp__img pswp__img--placeholder" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg" style="width: 609px; height: 406px; display: none;"><img class="pswp__img" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg" style="display: block; width: 609px; height: 406px;"></div></div>
-                            <div class="pswp__item" style="display: block; transform: translate3d(1773px, 0px, 0px);"><div class="pswp__zoom-wrap" style="transform: translate3d(487px, 44px, 0px) scale(1);"><img class="pswp__img" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(98).jpg" style="opacity: 1; width: 609px; height: 406px;"></div></div>
-                        </div>
-
-                        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-                        <div class="pswp__ui pswp__ui--fit pswp__ui--over-close">
-
-                            <div class="pswp__top-bar">
-
-                                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                                <div class="pswp__counter">1 / 9</div>
-
-                                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                                <!--<button class="pswp__button pswp__button--share" title="Share"></button>-->
-
-                                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                                <!-- element will get class pswp__preloader--active when preloader is running -->
-                                <div class="pswp__preloader">
-                                    <div class="pswp__preloader__icn">
-                                        <div class="pswp__preloader__cut">
-                                            <div class="pswp__preloader__donut"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!--
-                            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                                <div class="pswp__share-tooltip"></div>
-                            </div>
-                            -->
-
-                            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-
-                            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-
-                            <div class="pswp__caption pswp__caption--fake"><div class="pswp__caption__center"></div></div><div class="pswp__caption pswp__caption--empty">
-                                <div class="pswp__caption__center"></div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
+          
             <div class="mdb-lightbox no-margin">
 
                 <figure class="col-md-4">
@@ -882,7 +885,7 @@
 
         </div>
     </div>
-
+</div>
 
 
     <div class="container-fluid">
@@ -946,22 +949,7 @@
         <!--MDB-->
         <button type="button" class="btn btn-mdb-color">MDB</button>
     </div>
-
-    <!-- Start your project here-->
-    <!--<div style="height: 100vh">
-        <div class="flex-center flex-column">
-            <h1 class="animated fadeIn mb-4">Material Design for Bootstrap</h1>
-
-            <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
-
-            <p class="animated fadeIn text-muted">MDB Team</p>
-        </div>
-    </div>-->
-
-    <div class="container">
-
-
-
+    <div class="jumbotron container">
         <div class="col-md-6">
             <div class="view">
                 <img src="https://mdbootstrap.com/img/Photos/Others/nature-sm.jpg" class="img-fluid" alt="">
@@ -1327,127 +1315,7 @@
 
 
         <!--Section: Features v.4-->
-        <section>
-
-            <!--Section heading-->
-            <h1 class="py-5 font-weight-bold text-center">Why is it so great?</h1>
-            <!--Section description-->
-            <p class="px-5 mb-5 pb-3 lead grey-text text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam.
-            </p>
-
-            <!--Grid row-->
-            <div class="row">
-
-                <!--Grid column-->
-                <div class="col-md-4">
-
-                    <!--Grid row-->
-                    <div class="row mb-2">
-                        <div class="col-2">
-                            <i class="fa fa-2x fa-flag-checkered deep-purple-text"></i>
-                        </div>
-                        <div class="col-10 text-left">
-                            <h5 class="font-weight-bold">International</h5>
-                            <p class="grey-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-                                deleniti hic.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                    <!--Grid row-->
-                    <div class="row mb-2">
-                        <div class="col-2">
-                            <i class="fa fa-2x fa-flask deep-purple-text"></i>
-                        </div>
-                        <div class="col-10 text-left">
-                            <h5 class="font-weight-bold">Experimental</h5>
-                            <p class="grey-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-                                deleniti hic.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                    <!--Grid row-->
-                    <div class="row mb-2">
-                        <div class="col-2">
-                            <i class="fa fa-2x fa-glass deep-purple-text"></i>
-                        </div>
-                        <div class="col-10 text-left">
-                            <h5 class="font-weight-bold">Relaxing</h5>
-                            <p class="grey-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-                                deleniti hic.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                </div>
-                <!--Grid column-->
-                <!--Grid column-->
-                <div class="col-md-4 mb-2 center-on-small-only flex-center">
-                    <img src="https://mdbootstrap.com/img/Mockups/Transparent/Small/iphone-portfolio1.png" alt="" class="z-depth-0">
-                </div>
-                <!--Grid column-->
-                <!--Grid column-->
-                <div class="col-md-4">
-
-                    <!--Grid row-->
-                    <div class="row mb-2">
-                        <div class="col-2">
-                            <i class="fa fa-2x fa-heart deep-purple-text"></i>
-                        </div>
-                        <div class="col-10 text-left">
-                            <h5 class="font-weight-bold">Beloved</h5>
-                            <p class="grey-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-                                deleniti hic.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                    <!--Grid row-->
-                    <div class="row mb-2">
-                        <div class="col-2">
-                            <i class="fa fa-2x fa-flash deep-purple-text"></i>
-                        </div>
-                        <div class="col-10 text-left">
-                            <h5 class="font-weight-bold">Rapid</h5>
-                            <p class="grey-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-                                deleniti hic.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-                    <!--Grid row-->
-                    <div class="row mb-2">
-                        <div class="col-2">
-                            <i class="fa fa-2x fa-magic deep-purple-text"></i>
-                        </div>
-                        <div class="col-10 text-left">
-                            <h5 class="font-weight-bold">Magical</h5>
-                            <p class="grey-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda
-                                deleniti hic.
-                            </p>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-
-                </div>
-                <!--Grid column-->
-
-            </div>
-            <!--Grid row-->
-
-        </section>
-        <!--/Section: Features v.4-->
-
+        
 
 
 
@@ -1625,56 +1493,38 @@
         <div class="d-inline-flex p-2 group-control">I'm an inline flexbox container!</div>
 
     </div>
-    <!--Footer-->
     <footer class="page-footer font-small blue-grey lighten-5 pt-0">
 
         <div style="background-color: #21d192;">
             <div class="container">
-                <!--Grid row-->
                 <div class="row py-4 d-flex align-items-center">
-
-                    <!--Grid column-->
                     <div class="col-12 col-md-5 text-left mb-4 mb-md-0">
                         <h6 class="mb-0 white-text text-center text-md-left">
                             <strong>Get connected with us on social networks!</strong>
                         </h6>
                     </div>
-                    <!--Grid column-->
-                    <!--Grid column-->
                     <div class="col-12 col-md-7 text-center text-md-right">
-                        <!--Facebook-->
                         <a class="fb-ic ml-0">
                             <i class="fa fa-facebook white-text mr-lg-4"> </i>
                         </a>
-                        <!--Twitter-->
                         <a class="tw-ic">
                             <i class="fa fa-twitter white-text mr-lg-4"> </i>
                         </a>
-                        <!--Google +-->
                         <a class="gplus-ic">
                             <i class="fa fa-google-plus white-text mr-lg-4"> </i>
                         </a>
-                        <!--Linkedin-->
                         <a class="li-ic">
                             <i class="fa fa-linkedin white-text mr-lg-4"> </i>
                         </a>
-                        <!--Instagram-->
                         <a class="ins-ic">
                             <i class="fa fa-instagram white-text mr-lg-4"> </i>
                         </a>
                     </div>
-                    <!--Grid column-->
-
                 </div>
-                <!--Grid row-->
             </div>
         </div>
-
-        <!--Footer Links-->
         <div class="container mt-5 mb-4 text-center text-md-left">
             <div class="row mt-3">
-
-                <!--First column-->
                 <div class="col-md-3 col-lg-4 col-xl-3 mb-4 dark-grey-text">
                     <h6 class="text-uppercase font-weight-bold">
                         <strong>Company name</strong>
@@ -1685,8 +1535,6 @@
                         amet, consectetur adipisicing elit.
                     </p>
                 </div>
-                <!--/.First column-->
-                <!--Second column-->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text">
                     <h6 class="text-uppercase font-weight-bold">
                         <strong>Products</strong>
@@ -1705,8 +1553,6 @@
                         <a href="#!" class="dark-grey-text">Bootstrap Angular</a>
                     </p>
                 </div>
-                <!--/.Second column-->
-                <!--Third column-->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 dark-grey-text">
                     <h6 class="text-uppercase font-weight-bold">
                         <strong>Useful links</strong>
@@ -1725,8 +1571,6 @@
                         <a href="#!" class="dark-grey-text">Help</a>
                     </p>
                 </div>
-                <!--/.Third column-->
-                <!--Fourth column-->
                 <div class="col-md-4 col-lg-3 col-xl-3 dark-grey-text">
                     <h6 class="text-uppercase font-weight-bold">
                         <strong>Contact</strong>
@@ -1745,39 +1589,24 @@
                         <i class="fa fa-print mr-3"></i> + 01 234 567 89
                     </p>
                 </div>
-                <!--/.Fourth column-->
-
             </div>
         </div>
-        <!--/.Footer Links-->
-        <!-- Copyright-->
         <div class="footer-copyright py-3 text-center">
             © 2018 Copyright:
             <a href="https://mdbootstrap.com/material-design-for-bootstrap/">
                 <strong> MDBootstrap.com</strong>
             </a>
         </div>
-        <!--/.Copyright -->
 
     </footer>
-    <!--/.Footer-->
-    <!-- /Start your project here-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script>
         $("#alert-target").click(function () {
             toastr["info"]("I was launched via jQuery!")
         });
-
-
-        //polar
         var ctxPA = document.getElementById("polarChart").getContext('2d');
         var myPolarChart = new Chart(ctxPA, {
             type: 'polarArea',
@@ -1853,21 +1682,7 @@
                 }
             }
         });
-
-        // MDB Lightbox Init
-        $(function () {
-            $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
-        });
-
-
-        // SideNav Button Initialization
-        $(".button-collapse").sideNav();
-        // SideNav Scrollbar Initialization
-        var sideNavScrollbar = document.querySelector('.custom-scrollbar');
-        Ps.initialize(sideNavScrollbar);
-
-
+     
     </script>
 </body>
-
 </html>
