@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/site.js"></script>
+    <link href="css/compiled.css" rel="stylesheet" />
+    <script src="js/toastr.js"></script>
+    <style>
+        @media(min-width:560px) {
+            .card {
+                width: 500px !important;
+                margin: auto !important;
+            }
+        }
+
+        .tab-content {
+            background: transparent !important;
+            box-shadow: none !important;
+        }
+        .nav-item > .active {
+            background: -webkit-linear-gradient(40deg,#5e49ff,#7873f5) !important;
+            background: linear-gradient(40deg,#5e49ff,#7873f5) !important;
+        }
+    </style>
+</head>
+
+<body class="pink-skin" style="background-image: url('assets/images/pedoni.jpg'); background-size: cover; ">
+   
+    <div style="height: 100vh; padding-top: 65px;">
+        <div class="flex-center">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs nav-justified" style=" position: fixed; top: 0;">
+                <li class="nav-item">
+                    <a class="nav-link active purple-gradient" data-toggle="tab" href="#panel2" role="tab">Login</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  purple-gradient" data-toggle="tab" href="#panel1" role="tab">Register</a>
+                </li>
+            </ul>
+            <!-- Tab panels -->
+            <div class="tab-content card">
+                <!--Panel 1-->
+                <div class="tab-pane fade in show  wow fadeInDown animated" id="panel1" role="tabpanel">
+                    <div class="card card-cascade narrower">
+                        <!--<div class="view overlay">
+                            <div class="purple-gradient">
+                                <p class="h4 text-center" style="padding:25px;">Sign up</p>
+                            </div>
+                        </div>-->
+                        <div class="card-body">
+                            <div class="form-header purple-gradient rounded">
+                                <h3><i class="fa fa-lock"></i> Register</h3>
+                            </div>
+                            <form>
+                                <div class="md-form">
+                                    <i class="fa fa-user prefix grey-text"></i>
+                                    <input type="text" id="materialFormRegisterNameEx" class="form-control">
+                                    <label for="materialFormRegisterNameEx">Your name</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-envelope prefix grey-text"></i>
+                                    <input type="email" id="materialFormRegisterEmailEx" class="form-control">
+                                    <label for="materialFormRegisterEmailEx">Your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                                    <input type="email" id="materialFormRegisterConfirmEx" class="form-control">
+                                    <label for="materialFormRegisterConfirmEx">Confirm your email</label>
+                                </div>
+                                <div class="md-form">
+                                    <i class="fa fa-lock prefix grey-text"></i>
+                                    <input type="password" id="materialFormRegisterPasswordEx" class="form-control">
+                                    <label for="materialFormRegisterPasswordEx">Your password</label>
+                                </div>
+
+                                <div class="text-center mt-4">
+                                    <button class="btn purple-gradient" type="submit">Register</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade active wow fadeInDown animated" id="panel2" role="tabpanel" style=" background: transparent !important; box-shadow: none !important; ">
+                    <div class="card mx-xl-5">
+                        <div class="card-body">
+                            <div class="form-header purple-gradient rounded">
+                                <h3><i class="fa fa-lock"></i> Login</h3>
+                            </div>
+                            <div class="md-form font-weight-light">
+                                <i class="fa fa-envelope prefix grey-text"></i>
+                                <input type="email" id="materialFormEmailEx" class="form-control">
+                                <label for="materialFormEmailEx">Your email</label>
+                            </div>
+                            <div class="md-form font-weight-light">
+                                <i class="fa fa-lock prefix grey-text"></i>
+                                <input type="password" id="materialFormPasswordEx" class="form-control">
+                                <label for="materialFormPasswordEx">Your password</label>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button class="btn purple-gradient waves-effect waves-light" type="submit">Login</button>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <div class="options font-weight-light">
+                                <p>Forgot <a href="#">Password?</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--<div class="card card-cascade narrower">
+                <div class="view overlay">
+                    <div class="purple-gradient">
+                        <p class="h4 text-center" style="padding:25px;">Sign up</p>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="md-form">
+                            <i class="fa fa-user prefix grey-text"></i>
+                            <input type="text" id="materialFormRegisterNameEx" class="form-control">
+                            <label for="materialFormRegisterNameEx">Your name</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix grey-text"></i>
+                            <input type="email" id="materialFormRegisterEmailEx" class="form-control">
+                            <label for="materialFormRegisterEmailEx">Your email</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+                            <input type="email" id="materialFormRegisterConfirmEx" class="form-control">
+                            <label for="materialFormRegisterConfirmEx">Confirm your email</label>
+                        </div>
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                            <input type="password" id="materialFormRegisterPasswordEx" class="form-control">
+                            <label for="materialFormRegisterPasswordEx">Your password</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button class="btn purple-gradient" type="submit">Register</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>-->
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>

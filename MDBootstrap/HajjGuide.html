@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/site.js"></script>
+    <link href="css/compiled.css" rel="stylesheet" />
+    <script src="js/toastr.js"></script>
+    <style>
+        body {
+            font-family: "Apple Chancery, cursive";
+        }
+
+        @media(min-width:560px) {
+            .card {
+                width: 500px !important;
+                margin: auto !important;
+            }
+        }
+
+        .tab-content {
+            background: transparent !important;
+            box-shadow: none !important;
+            width: 100% !important;
+        }
+    </style>
+</head>
+
+<body class="pink-skin">
+    <!--<nav class="mb-1 navbar navbar-expand-lg navbar-dark purple" style="position: fixed;width: 100%;z-index: 9999999999;">
+        <div class="container">
+            <a class="navbar-brand" href="javascript:;;">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link waves-effect waves-light" href="/index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="./gallery.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="/portfolio.html">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light" href="/HajjGuide.html">Hajj Guide</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink-3">
+                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Action</a>
+                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Another action</a>
+                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-effect waves-light"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Action</a>
+                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Another action</a>
+                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>-->
+    <div class="container jumbotron" style="padding-top:0;">
+        <div class="tabs-wrapper">
+            <div class="container tabs-purple">
+                <ul class="nav classic-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link waves-light active" data-toggle="tab" href="#dosndonts">Do's and Don'ts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-light" data-toggle="tab" href="#shortsummary">Short Summary</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab-content card container jumbotron">
+            <div class="tab-pane fadeIn show active" id="dosndonts" role="tabpanel">
+                <!--<div class="row" style="margin: -30px;">
+                    <div class="col">
+                        <img src="img/hajjimages/dosndonts.jpg" style=" width: 100%; height: 250px;" />
+                    </div>
+                </div>-->
+                <section class="magazine-section text-center">
+                    <h2 class="h1 text-center my-5 font-weight-bold">What to Do And What not to Do ?</h2>
+                    <p class="grey-text pb-5">
+                        Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <div class="row text-left">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="single-news">
+                                <div class="view overlay rounded z-depth-1-half mb-3">
+                                    <img src="img/hajjimages/7.jpg" class="img-fluid" alt="Wider samplepost image">
+                                    <a>
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+                                <div class="news-data mb-5">
+                                    <!--<a href="" class="deep-orange-text">
+                                        <h6>
+                                            <i class="fa fa-cutlery"></i>
+
+                                            <strong> Culinary</strong>
+                                        </h6>
+                                    </a>-->
+                                    <!--<p class="dark-grey-text">
+                                        <strong>
+                                            <i class="fa fa-clock-o"></i> 27/02/2018
+                                        </strong>
+                                    </p>-->
+
+                                </div>
+
+                                <h3 class="pt-2">
+                                    <a>
+                                        <strong>
+                                            This is title
+                                            of the news
+                                        </strong>
+                                    </a>
+                                </h3>
+                                <p align="justify">
+                                    One of the most common mistakes women make is rushing through Hajj. Remember that Allah will look at the quality of your worship, NOT your quantity. And that’s why our deeds will be weighed on the Day of Judgment and not counted. Isn't it better to have beautifully performed Prayers and Duas rather than having it botched in a greater quantity? Pray with all of your heart and soul and please Allah (SWAT).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12">
+                            <div class="single-news">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="view overlay rounded z-depth-1">
+                                            <img src="img/hajjimages/7.jpg" class="img-fluid" alt="Minor sample post image">
+                                            <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="dark-grey-text">
+                                            <strong>25/02/2018</strong>
+                                        </p>
+                                        <a class="grey-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate.<i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-news">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="view overlay rounded z-depth-1">
+                                            <img src="img/hajjimages/6.jpg"
+                                                 class="img-fluid" alt="Minor sample post image">
+                                            <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="dark-grey-text">
+                                            <strong>25/02/2018</strong>
+                                        </p>
+
+                                        <a class="grey-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate.
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-news">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="view overlay rounded z-depth-1">
+                                            <img src="img/hajjimages/5.jpg"
+                                                 class="img-fluid" alt="Minor sample post image">
+                                            <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="dark-grey-text">
+                                            <strong>25/02/2018</strong>
+                                        </p>
+                                        <a class="grey-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate.
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-news">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="view overlay rounded z-depth-1">
+                                            <img src="img/hajjimages/4.jpg"
+                                                 class="img-fluid" alt="Minor sample post image">
+                                            <a>
+                                                <div class="mask rgba-white-slight"></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <p class="dark-grey-text">
+                                            <strong>25/02/2018</strong>
+                                        </p>
+                                        <a class="grey-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate.
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--Section: Magazine v.2-->
+                <!--<div class="row" style="margin: -30px;">
+                    <div class="col">
+                        The Performing of Hajj does not mean rushing through the process. Quality of your prayers is more accountable than the quantity. That's one of the common mistakes people make during Hajj. There are more errors people make consciously or unconsciously. We should avoid what's forbidden and always do things that are pleasing in the eyes of Allah (SWAT). If you follow the few points of the do's and don'ts of Hajj, it can make your journey acceptable, easy and comfortable.
+                        <img src="img/hajjimages/7.jpg" style=" width: 100%; height: 250px;" />
+                        1) One of the most common mistakes women make is rushing through Hajj. Remember that Allah will look at the quality of your worship, NOT your quantity. And that’s why our deeds will be weighed on the Day of Judgment and not counted. Isn't it better to have beautifully performed Prayers and Duas rather than having it botched in a greater quantity? Pray with all of your heart and soul and please Allah (SWAT).
+                        <img src="img/hajjimages/6.jpg" style=" width: 100%; height: 300px;" />
+                        2) Hajj should be performed for Allah (SWAT) and to please him. It should not be for showing off or for a reputation. Many people make this mistake but what they don't realize is, if their intentions of praying are not towards pleasing Allah (SWAT), their prayers will not be accepted. Allah (SWAT) said in Hadith Qudsi "I am the most self-sufficient of partners needing no partnership. If one does a deed for me and another simultaneously, I abandon him and his partnership."
+                        <img src="img/hajjimages/5.jpg" style=" width: 100%; height: 300px;" />
+                        3) Hajj should be performed according to the way taught by Allah (SWAT)'s Messenger (PBUH). Therefore we advise and implore our brothers and sisters who intend to perform Hajj not to travel until they have learned how the Prophet (SAW) (PBUH) did it so that they can comply with the order of Allah (SWAT).
+                        <img src="img/hajjimages/4.jpg" style=" width: 100%; height: 300px;" />
+                        4) Learn what is forbidden while in Ihram. Understand the difference between completely forbidden and Makrooh. Differentiate between facts and myths. If Allah (SWAT) has made an exception, make use of it. Don't make anything harder than necessary. This was the way of Prophet (SAW) (PBUH).
+                        <img src="img/hajjimages/3.jpg" style=" width: 100%; height: 300px;" />
+                        5) Be very patient, you will be tested to your limits. Don't lose your temper by getting impatient and angry about the little things. Allah (SWAT) is watching you every day and He will see how you handle yourself in every situation. Your wait is part of the journey and your patience will be rewarded in the end.
+                        <img src="img/hajjimages/2.jpg" style=" width: 100%; height: 300px;" />
+                        6) A dry cough and bad throat are common during Hajj. Your fingers tend to carry germs into your body. To minimise this risk, avoid touching your eyes, nose, mouth, and face in general when you leave. While doing Sajdah, make sure to put a small piece of cloth on the floor to put your face on it.
+                        <img src="img/hajjimages/1.jpg" style=" width: 100%; height: 300px;" />
+                        7) Women think the only people who can cut their hair after completing their rituals is someone who has exited Ihram. And they refuse to cut their own hair or let another sister who has not yet exited Ihram to cut their hair, thinking that it's not allowed. But actually, you are supposed to cut your own hair when you finish with all the rituals. The Prophet (SAW) (PBUH) said: "Let him cut his (meaning, his own) hair then exit Ihram" (Al-Bukhari, Muslim).
+                        <br /><br />
+                        When you think about it, there are many little things that people make mistakes - whether consciously or not. We should do our best to avoid these simple mistakes. If you don't know something, ask someone who does. People would not hesitate to help you out. You should always take every advice into account. If you are still unsure and hesitant, seek help from the Moulawi in charge of your group. There is no shortage of people to help, you only need to ask. Make your trip more productive than the last or if it's your first trip, make use of the tips given above.
+                    </div>
+                </div>-->
+            </div>
+            <div class="tab-pane fadeIn" id="shortsummary" role="tabpanel">
+                <div class="form-group">
+                    <h1 class="text-left">Introduction</h1>
+                    <p class="text-justify">
+                        Millions of Muslims from around the world gather annually in Mecca in anticipation of Hajj - the Muslim pilgrimage, which follows the actions of the Prophet Muhammad 1,377 years ago.<br />
+                        Taking part in the pilgrimage at least once in one's lifetime is a major obligation for all able-bodied Muslims of financial means, and between two and three million people participate in the six-day ritual every year.<br />
+                        Hajj occurs in the 12th month of the Islamic lunar calendar, called Dhul-Hijjah, between the eighth and 13th days of the month.<br />
+                        While the specific rituals carried out by Muslims today date back to the Prophet Muhammad's "farewell pilgrimage" in 632 AD, travelling to Mecca was a sacred annual rite for Arabian tribes centuries before the advent of Islam.<br />
+                        According to Islamic tradition, the Kaaba - a black silk-clad stone structure at the heart of the Grand Mosque in Mecca - was built by the Prophet Abraham in biblical times.<br />
+                        Hajj is, put simply, complex. There are several different ways of performing it, and numerous schools of Islamic thought, between which lie many scholarly differences. Here is a breakdown of the steps included in performing hajj.<br />
+                    </p>
+                </div>
+                <div class="tabs-wrapper ">
+                    <div class="container tabs-purple">
+                        <ul class="nav classic-tabs " role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link waves-light active" data-toggle="tab" href="#panel51" role="tab">DAY1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-light" data-toggle="tab" href="#panel52" role="tab">DAY2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-light" data-toggle="tab" href="#panel53" role="tab">DAY3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link waves-light" data-toggle="tab" href="#panel54" role="tab">DAY4 & DAY5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content card container jumbotron" style="width:100% !important;">
+
+                    <!--Panel 1-->
+                    <div class="tab-pane fade in show active" id="panel51" role="tabpanel">
+
+                        <h1>Enter ihram (the sacred state)</h1>
+                        The very first rite of Hajj is entering ihram -  a pilgrim's sacred state - when crossing the outer boundaries of Mecca, called Miqat .<br /><br />
+                        On the eighth of Dhul-Hijjah, pilgrims enter ihram, which entails wearing plain garments - two unstitched cloths for men, or loose-fitting clothing for women - as well as following certain rules, such as not giving in to anger or engaging in sexual activity.
+                        <br /><br />
+                        <h1>Head to Mina, a sprawling tent city</h1>
+                        <p>
+                            The pilgrims then set out en masse from Mecca to the sprawling tent-city of Mina, whether by foot along pilgrim paths or by buses and cars. It is an 8 km journey.<br /><br />
+                            The pilgrims will spend the day in Mina, only setting out the next morning at dawn. Most of the time in Mina is spent in prayer and remembering Allah.<br /><br />
+                        </p>
+
+                    </div>
+                    <!--/.Panel 1-->
+                    <!--Panel 2-->
+                    <div class="tab-pane fade" id="panel52" role="tabpanel">
+                        <h1>Spend the day at Arafat</h1>
+                        <p>
+                            The Day of Arafat is considered one of the most important days, not just of Hajj, but of the Islamic calendar. Mount Mercy at Arafat was the scene of the Prophet Muhammad's final sermon. After making the 14.4 km journey from Mina, pilgrims spend the day here in reverent prayer.<br /><br />
+                            Elsewhere in the world, many Muslims choose to fast on this day.<br /><br />
+                        </p>
+                        <h1>Collect pebbles at Muzdalifah</h1>
+                        <p>After sunset, its time to move again, this time to Muzdalifah - a 9 km trip - where they spend the night under the stars. Many will also begin collecting pebbles here for tomorrow's rites, departing again just before sunrise. </p><br /><br />
+                    </div>
+                    <!--/.Panel 2-->
+                    <!--Panel 3-->
+                    <div class="tab-pane fade" id="panel53" role="tabpanel">
+                        <h1>Throw stones at the pillars</h1>
+                        <p>
+                            For those performing Hajj, the day is known as yawm-ul hajj al-akbar (The big hajj day) and is probably the longest day of the pilgrimage, and the most dangerous.The 10th of Dhul-Hijjah is Eid al-Adha, a day celebrated by Muslims around the world as the greater of the two Muslim holidays.<br /><br />
+                            Pilgrims start the day in Muzdalifah and begin heading back to Mina before dawn. Once in Mina, they perform the first rami, throwing seven pebbles at the largest of three columns known as Jamarat.<br /><br />
+                            This act is a symbolic stoning of the devil, based on historical tradition. God told Abraham to sacrifice his son, the story goes, as proof of faith. It is believed that at this spot in Mina, the devil appeared and tried to dissuade Abraham from heeding the command. Abraham responded by throwing stones to scare him off.<br /><br />
+                            Millions of pilgrims converge at the Jamarat Bridge, which houses the three columns representing the devil, in order to re-enact the story.<br /><br />
+                            The bridge has been the sight of deadly stampedes in the past, with around 350 people being crushed to death in 2006.<br /><br />
+                            But in recent years, the event has taken place without major incident.<br /><br />
+                            After casting their stones, pilgrims must perform the sacrifice. Completing the story, when Abraham went to sacrifice his son, he found God had placed a ram there to be slaughtered instead.<br /><br />
+                            Pilgrims thus must slaughter a sheep, goat, cow or camel - or more likely, pay for it to be done in their names.<br /><br />
+                            At this point, pilgrims trim or shave (men only) their hair and remove their ihram clothes. Many will then proceed to Mecca to perform tawaf and sa'ee, first circling the Kaaba seven times, then walking seven times between the hills of Safa and Marwa.<br /><br />
+                            When all is finally done, they return to their campsite in Mina.<br /><br />
+                        </p>
+                    </div>
+                    <!--/.Panel 3-->
+                    <!--Panel 4-->
+                    <div class="tab-pane fade" id="panel54" role="tabpanel">
+                        <h1>Final days in Mina</h1>
+                        <p>
+                            On each day, they will again symbolically stone the devil - this time throwing seven pebbles at each of the three pillars.With the hardest part behind them, pilgrims will now spend the next two or three days in Mina.<br /><br />
+                            When their time in Mina is finished, the pilgrims return to Mecca to perform the final circulation of the Kaaba, a "farewell" tawaf.<br /><br />
+                            Before heading home, many also go to Medina, the second holiest city in Islam, where the Prophet Muhammad is buried along with his closest companions. Visiting Medina, however, is not part of the pilgrimage.<br /><br />
+                        </p>
+
+                    </div>
+                    <!--/.Panel 4-->
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
