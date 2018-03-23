@@ -96,7 +96,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\compiled.css" />
+    <Content Include="gallery.html" />
     <Content Include="js\site.js" />
+    <Content Include="login.html" />
     <Content Include="mdl\index.html" />
     <Content Include="notepad.html" />
     <Content Include="packages.config" />
@@ -123,6 +125,7 @@
     <Content Include="font\roboto\Roboto-Thin.ttf" />
     <Content Include="font\roboto\Roboto-Thin.woff" />
     <Content Include="font\roboto\Roboto-Thin.woff2" />
+    <Content Include="portfolio.html" />
     <Content Include="scss\core\bootstrap\_functions.scss" />
     <Content Include="scss\core\bootstrap\_variables.scss" />
     <Content Include="scss\core\_colors.scss" />
