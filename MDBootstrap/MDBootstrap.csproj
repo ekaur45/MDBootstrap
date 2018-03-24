@@ -95,6 +95,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\audio\Bohemia - Ek Tera Pyar feat. Devika %28Full Video%29 Punjabi Songs.mp3" />
+    <Content Include="assets\images\images.jpg" />
+    <Content Include="assets\images\pedoni.jpg" />
+    <Content Include="assets\images\street_light.jpg" />
     <Content Include="css\compiled.css" />
     <Content Include="gallery.html" />
     <Content Include="HajjGuide.html" />

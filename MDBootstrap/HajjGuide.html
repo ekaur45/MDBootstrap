@@ -31,68 +31,47 @@
             box-shadow: none !important;
             width: 100% !important;
         }
+
+        #progressDot {
+            height: 10px;
+            width: 10px;
+            margin-top: -2px;
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        #progressDot:hover {
+            height: 14px;
+            width: 14px;
+            margin-top: -3px;
+            background-color: red;
+            border-radius: 6px;
+        }
+
     </style>
+   
 </head>
 
 <body class="pink-skin">
-    <!--<nav class="mb-1 navbar navbar-expand-lg navbar-dark purple" style="position: fixed;width: 100%;z-index: 9999999999;">
-        <div class="container">
-            <a class="navbar-brand" href="javascript:;;">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-3" aria-controls="navbarSupportedContent-3" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent-3">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link waves-effect waves-light" href="/index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="./gallery.html">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="/portfolio.html">portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="/HajjGuide.html">Hajj Guide</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink-3">
-                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Another action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto nav-flex-icons">
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light"><i class="fa fa-twitter"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light"><i class="fa fa-google-plus"></i></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-unique" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Another action</a>
-                            <a class="dropdown-item waves-effect waves-light" href="javascript:;;">Something else here</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->
+    <div class="container">
+        <audio controls="controls" id="audio" style="width:100%;">
+            <source src="assets/audio/Bohemia - Ek Tera Pyar feat. Devika (Full Video) Punjabi Songs.mp3" type="audio/mp3" />
+        </audio>
+    </div>
+    <!--<div class="container">
+        <a href="javascript:;;" id="btnPlayPause" onclick="playPause()"><i id="iconPlayPause"></i></a>
+        <a href="javascript:;;" id="btnStop" onclick="stopPlay()"><i id="iconStop"></i></a>
+        <div class="progress-bar" id="progress" style="width:100%;height:6px;background-color:transparent;"><div id="progressBar" style="height:100%;" class="purple-gradient"><div id="progressDot" style="" onmousedown="drageDot()"></div></div></div>
+    </div>-->
     <div class="container jumbotron" style="padding-top:0;">
         <div class="tabs-wrapper">
             <div class="container tabs-purple">
                 <ul class="nav classic-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link waves-light active" data-toggle="tab" href="#dosndonts">Do's and Don'ts</a>
+                        <a class="nav-link waves-light active" data-toggle="tab" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-light" data-toggle="tab" href="#dosndonts">Do's and Don'ts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link waves-light" data-toggle="tab" href="#shortsummary">Short Summary</a>
@@ -101,8 +80,57 @@
             </div>
         </div>
 
-        <div class="tab-content card container jumbotron">
-            <div class="tab-pane fadeIn show active" id="dosndonts" role="tabpanel">
+        <div class="tab-content card" style="padding: 0;    padding-top: 25px;">
+            <div class="tab-pane fadeIn show active wow fadeIn animated" id="Home" role="tabpanel">
+                <div id="carousel-example-2" class="carousel slide carousel-fade form-group" data-ride="carousel" style="margin-bottom: 50px">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="view">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+                                <div class="mask rgba-black-light"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Light mask</h3>
+                                <p>First text</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="view">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+                                <div class="mask rgba-black-strong"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Strong mask</h3>
+                                <p>Secondary text</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="view">
+                                <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+                                <div class="mask rgba-black-slight"></div>
+                            </div>
+                            <div class="carousel-caption">
+                                <h3 class="h3-responsive">Slight mask</h3>
+                                <p>Third text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane fadeIn  wow fadeIn animated" id="dosndonts" role="tabpanel">
                 <!--<div class="row" style="margin: -30px;">
                     <div class="col">
                         <img src="img/hajjimages/dosndonts.jpg" style=" width: 100%; height: 250px;" />
@@ -268,7 +296,7 @@
                     </div>
                 </div>-->
             </div>
-            <div class="tab-pane fadeIn" id="shortsummary" role="tabpanel">
+            <div class="tab-pane fadeIn wow fadeIn animated" id="shortsummary" role="tabpanel">
                 <div class="form-group">
                     <h1 class="text-left">Introduction</h1>
                     <p class="text-justify">
@@ -301,7 +329,7 @@
                 <div class="tab-content card container jumbotron" style="width:100% !important;">
 
                     <!--Panel 1-->
-                    <div class="tab-pane fade in show active" id="panel51" role="tabpanel">
+                    <div class="tab-pane fade in show active wow fadeInDown animated" id="panel51" role="tabpanel">
 
                         <h1>Enter ihram (the sacred state)</h1>
                         The very first rite of Hajj is entering ihram -  a pilgrim's sacred state - when crossing the outer boundaries of Mecca, called Miqat .<br /><br />
@@ -316,7 +344,7 @@
                     </div>
                     <!--/.Panel 1-->
                     <!--Panel 2-->
-                    <div class="tab-pane fade" id="panel52" role="tabpanel">
+                    <div class="tab-pane fade wow fadeInDown animated" id="panel52" role="tabpanel">
                         <h1>Spend the day at Arafat</h1>
                         <p>
                             The Day of Arafat is considered one of the most important days, not just of Hajj, but of the Islamic calendar. Mount Mercy at Arafat was the scene of the Prophet Muhammad's final sermon. After making the 14.4 km journey from Mina, pilgrims spend the day here in reverent prayer.<br /><br />
@@ -327,7 +355,7 @@
                     </div>
                     <!--/.Panel 2-->
                     <!--Panel 3-->
-                    <div class="tab-pane fade" id="panel53" role="tabpanel">
+                    <div class="tab-pane fade wow fadeInDown animated" id="panel53" role="tabpanel">
                         <h1>Throw stones at the pillars</h1>
                         <p>
                             For those performing Hajj, the day is known as yawm-ul hajj al-akbar (The big hajj day) and is probably the longest day of the pilgrimage, and the most dangerous.The 10th of Dhul-Hijjah is Eid al-Adha, a day celebrated by Muslims around the world as the greater of the two Muslim holidays.<br /><br />
@@ -344,7 +372,7 @@
                     </div>
                     <!--/.Panel 3-->
                     <!--Panel 4-->
-                    <div class="tab-pane fade" id="panel54" role="tabpanel">
+                    <div class="tab-pane fade wow fadeInDown animated" id="panel54" role="tabpanel">
                         <h1>Final days in Mina</h1>
                         <p>
                             On each day, they will again symbolically stone the devil - this time throwing seven pebbles at each of the three pillars.With the hardest part behind them, pilgrims will now spend the next two or three days in Mina.<br /><br />
@@ -366,5 +394,65 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script>
+        var played = false;
+        var progress = 0;
+        var progressMouseDown = false;
+        var btnPlayPauseStatus = document.getElementById('audio');
+        var duration = btnPlayPauseStatus.duration;
+        $(function () {
+            btnPlayPauseStatus.played = false;
+            document.getElementById('iconPlayPause').classList = "fa fa-play-circle";
+            document.getElementById('iconPlayPause').innerText = "play";
+            document.getElementById('iconStop').innerText = "Stop";
+            $("#progressBar").css({ "width": "0%" });
+        });
+        function playPause() {
+            if (played == false) {
+                played = true;
+                btnPlayPauseStatus.play();
+                document.getElementById('iconPlayPause').classList = "fa fa-pause-circle";
+                document.getElementById('iconPlayPause').innerText = "pause";
+            } else {
+                played = false;
+                btnPlayPauseStatus.pause();
+                document.getElementById('iconPlayPause').innerText = "play";
+            }
+        }
+        function showProgress() {
+            duration = document.getElementById('audio').duration;
+            if (document.getElementById('audio').currentTime == duration) {
+                played = false;
+                btnPlayPauseStatus.pause();
+                document.getElementById('iconPlayPause').innerText = "play";
+                $("#progressDot").css({ "margin-left": "0px" });
+                return;
+            }
+            progress = parseFloat(document.getElementById('audio').currentTime) / parseFloat(duration);
+            progress = progress * 100;
+            $("#progressBar").css({ "width": progress + "%" });
+            $("#progressDot").css({ "margin-left": $("#progressBar").width()-5 + "px" });
+        }
+        function stopPlay(){
+            played = false;
+            btnPlayPauseStatus.pause();
+            document.getElementById('audio').currentTime = 0;
+            document.getElementById('iconPlayPause').innerText = "play";
+            $("#progressDot").css({ "margin-left": "0px" });
+            document.getElementById('iconStop').innerText = "Stop";
+        }
+        //function drageDot() {
+
+        //    if (progressMouseDown == true) {
+
+        //    }
+        //}
+        $("#progressDot").mousedown(function () {
+            //alert("mousedown");
+        });
+        $("#progressDot").mouseup(function () {
+            alert("mouseup");
+        });
+    </script>
 </body>
 </html>
